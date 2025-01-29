@@ -13,7 +13,6 @@ def clean_data(df: pd.DataFrame) -> pd.DataFrame:
     Returns:
         pd.DataFrame: The cleaned and preprocessed DataFrame.
     """
-
     df = df.dropna()
 
     df = df.drop(columns=['Serial_Number', 'Voltage_Cutoff', 'Nominal_Voltage'])
